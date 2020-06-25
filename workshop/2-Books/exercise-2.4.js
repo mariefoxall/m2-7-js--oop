@@ -34,13 +34,16 @@ class BookList {
     }).length;
   };
 
-  startReading = (book) => {
+  startReading = (title) => {
+    const book = this.books.find((book) => book.title === title);
     this.currentlyReading = book;
   };
 
-  finishReading = (book) => {
-    this.currentlyReading = null;
+  finishReading = (title) => {
+    const book = this.books.find((book) => book.title === title);
     this.lastRead = book;
+    this.currentlyReading = null;
+    book.isRead = true;
   };
 }
 
