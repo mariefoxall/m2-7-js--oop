@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+
+  text-align: center;
+}
+
+header {
+  background-color: lightgoldenrodyellow;
+  padding: 20px 0;
+}
+
+.bookDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid lightseagreen;
+}
+
+h1 {
+  font-family: "Notable", sans-serif;
+  color: lightcoral;
+}
+
+h2 {
+  padding-top: 20px;
+  font-family: "Notable", sans-serif;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+.current {
+  background-color: rgb(177, 245, 222);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: salmon;
+}
+img {
+  margin: 20px;
+  height: 200px;
+}
+
+.details {
+  margin-bottom: 20px;
+  text-align: left;
+  border: 1px solid lightsalmon;
+  padding: 10px;
+}
