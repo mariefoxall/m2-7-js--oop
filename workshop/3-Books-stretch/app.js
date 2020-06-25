@@ -35,7 +35,7 @@ class BookList {
     newBookGenre.innerText = `Genre: ${book.genre}`;
     newBookAuthor.innerText = `Author: ${book.author}`;
     let readStatus = false;
-    if (book.isRead === true) {
+    if (book.isRead == true) {
       readStatus = "Finished it!";
     } else {
       readStatus = "Looking forward to reading it.";
@@ -130,5 +130,17 @@ homeLibrary.add(
     "assets\\the-revisionists.jpg"
   )
 );
+
+let formBook = (form) => {
+  let formTitle = form.title.value;
+  let formGenre = form.genre.value;
+  let formAuthor = form.author.value;
+  let formRead = form.read.value == "true" ? true : false;
+  let formImg = form.img.value;
+
+  homeLibrary.add(
+    new Book(formTitle, formGenre, formAuthor, formRead, formImg)
+  );
+};
 
 console.log(homeLibrary);

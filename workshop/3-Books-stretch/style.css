@@ -54,3 +54,14 @@ img {
   border: 1px solid lightsalmon;
   padding: 10px;
 }
+
+form {
+  margin: 20px 0;
+  font-family: "Raleway", sans-serif;
+  color: lightcoral;
+}
+
+input {
+  font-family: "Raleway";
+  color: lightcoral;
+}
